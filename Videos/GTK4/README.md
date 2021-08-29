@@ -90,8 +90,19 @@ export LD_LIBRARY_PATH=/usr/local/lib/x86_64-linux-gnu && sudo ldconfig
 3. Follow the instructions below:
 
 ```bash
-
 meson setup _build .
 meson compile -C _build
 meson install -C _build
+```
+
+**Epoxy**:
+
+1. Clone the repository from [GitHub](https://github.com/anholt/libepoxy) and `cd` into the directory.
+2. Install dependencies: `sudo apt install libegl1-mesa-dev`.
+3. Build using these instructions:
+
+```bash
+mkdir build && cd build
+ninja
+ninja install
 ```
