@@ -1,3 +1,19 @@
+
+## Links
+
+S.No. | Title (with Link)
+--- | --- |
+1 | [Watch this before building #GTK4 from source (As of AUG 2021)](https://www.youtube.com/watch?v=21iWUthRFVY&list=PLfjzHJeA53gSjJ92UZAHCFjpqN9z7x1Jc&index=12)
+2 | [GTK4 Building From Source: Part-2: GLib](https://youtu.be/R-gPu2J35M4)
+3 | [GTK4 Building From Source: Part-1: Meson and Ninja](https://www.youtube.com/watch?v=s1cR7D1ukkk&list=PLfjzHJeA53gSjJ92UZAHCFjpqN9z7x1Jc&index=3)
+4 | [GTK4 Building From Source: Part-3: GdkPixbuf](https://youtu.be/qhBDY5MeTok)
+5 | [GTK4 Building From Source: Part-4: GObjectIntrospection](https://youtu.be/esK9FdeoUSw)
+6 | [GTK4 Building From Source: Part-5: Cairo and Pango](https://youtu.be/0VnOPAjFLuc)
+7 | [GTK4 Building From Source: Part-6: Epoxy](https://youtu.be/iwuA_wxZY68)
+8 | [GTK4 Building From Source: Part-7: Graphene](https://youtu.be/TCKR_pjKweg)
+9 | [GTK4 Building From Source: Part-8: XkpbCommon](https://youtu.be/rHG8-vNxVk4)
+10 | [GTK4 Building From Source: Part-9: GTK4 FROM SOURCE!](https://youtu.be/H4QRGOA2WCw)
+
 ## Installing/Building Dependencies
 
 **Basic Dependencies**:
@@ -103,6 +119,7 @@ meson install -C _build
 
 ```bash
 mkdir build && cd build
+meson
 ninja
 ninja install
 ```
@@ -118,3 +135,14 @@ cd _build
 ninja test
 ninja install
 ```
+
+**XkbCommon**:
+
+1. Clone the repository from [GitHub](https://github.com/xkbcommon/libxkbcommon) and `cd` into the directory.
+2. Build using the instructions given in their README file.
+
+**GTK4**:
+
+1. Clone the repository from [GitLab](https://gitlab.gnome.org/GNOME/gtk) and `cd` into the directory.
+2. Make sure to checkout to `4.0` branch: `git checkout 4.0`.
+3. Build using the instructions given in their README file.
