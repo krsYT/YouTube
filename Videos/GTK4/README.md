@@ -39,3 +39,21 @@ meson setup _build
 meson compile -C _build
 meson install -C _build
 ```
+
+**GObject**:
+
+Install the following dependencies first:
+
+```
+sudo apt install flex bison
+```
+
+1. Download `gobject-introspection-1.69.0.tar.xz` from https://download.gnome.org/sources/gobject-introspection/1.69/.
+2. Extract using `tar xf https://download.gnome.org/sources/gobject-introspection/1.69/` and `cd` into the directory.
+3. Follow these instructions:
+
+```
+meson setup _build .
+meson compile -C _build
+meson install -C _build
+```
