@@ -106,3 +106,15 @@ mkdir build && cd build
 ninja
 ninja install
 ```
+
+**Graphene**:
+
+1. Clone the repository from [GitHub](https://github.com/ebassi/graphene) and `cd` into the directory.
+2. Build using these instructions: (also given in their README file)
+
+```bash
+meson _build
+cd _build
+ninja test
+ninja install
+```
